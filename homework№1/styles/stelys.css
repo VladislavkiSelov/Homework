@@ -1,0 +1,34 @@
+body{
+background-color:rgb(230, 230, 230)
+}
+/*Common_panel*/
+.Common_panel{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 1190px;
+    margin: 0px auto;
+    background-color:rgb(193, 214, 191);
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+}
+/*Right_panel*/
+.Right_panel{
+    width: 800px;
+    padding-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    background-color:rgb(177, 202, 174)}
+    /*transition*/
+.transition{
+    padding-left: 550px;
+}
+
+/*Left_panel*/
+.photo{
+width: 300px;
+
+}
+.Left_panel{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color:rgb(41, 41, 41);}
