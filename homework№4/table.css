@@ -1,0 +1,18 @@
+ td {
+	border: 1px solid black; width: 50px; height: 50px;
+    font-size: 0;}
+.cell_4{
+    background-color: rgb(255, 235, 53);
+}
+.cell_31{
+background-color: rgb(255, 235, 53);
+}
+.cell_29{
+    background-color: blue;
+}
+.cell_44{
+    background-color: rgb(216, 16, 16);
+}
+.hide_0{
+    empty-cells: hide;
+}
