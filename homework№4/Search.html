@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action=" https://fom.in.ua/echo" method="post">
+      <span>
+        Марка авто
+        <select name="car_brand" multiple size="2">
+          <option value="Audi">Audi</option>
+          <option value="Alfa_Romeo">Alfa Romeo/option></option>
+          <option value="Lamborghini">Lamborghini</option>
+          <option value="Kia">Kia</option>
+          <option value="Mercedes-Benz">Mercedes-Benz</option>
+          <option value="Mitsubishi">Mitsubishi</option>
+          <option value="BMW">BMW</option>
+        </select>
+      </span>
+      <br />
+      <span>
+        Тип транспорта
+        <select name="car_body">
+          <option value="Cars">Легковые</option>
+          <option value="moto">Мото</option>
+          <option value="trucks">Грузовики</option>
+          <option value="special_equipment">Спецтехника</option>
+          <option value="buses">Автобусы</option>
+          <option value="water_transport">Водный транспорт</option>
+        </select>
+      </span>
+      <br />
+      <span>
+        Тип кузова
+        <input type="checkbox" name="sedan" id="sedan" />
+        <label for="sedan">Седан</label>
+        <input type="checkbox" name="hatchback" id="hatchback" />
+        <label for="hatchback">Хэтчбек</label>
+        <input type="checkbox" name="coupe" id="coupe" />
+        <label for="coupe">Купе</label>
+        <input type="checkbox" name="cabriolet" id="cabriolet" />
+        <label for="cabriolet">Кабриолет</label>
+      </span>
+      <br />
+      <span>
+        Страна производитель
+        <select name="car_сountry">
+          <option value="Germany">Германия</option>
+          <option value="Italy">Италия</option>
+          <option value="Korea">Корея</option>
+          <option value="Japan">Япония</option>
+          <option value="China">Китай</option>
+        </select>
+      </span>
+      <br />
+      <span>
+        Цена
+        <br />
+        от
+        <input type="number" name="price_from" />
+        до
+        <input type="number" name="price up to" />
+      </span>
+      <br />
+      <span>
+        Год выпуска
+        <br />
+        от
+        <input type="number" name="Year_of_issue_from" />
+        до
+        <input type="number" name="Year_of_issue_up_to" />
+      </span>
+      <br />
+      <span>
+        Тип топлива
+        <input type="radio" name="fuel" id="petrol" value="petrol" />
+        <label for="petrol">Бензин</label>
+        <input type="radio" name="fuel" id="diesel" value="diesel" />
+        <label for="diesel">Дизель</label>
+        <input type="radio" name="fuel" id="Electricity" value="Electricity" />
+        <label for="Electricity">Електричество</label>
+        <input type="radio" name="fuel" id="methane" value="methane" />
+        <label for="methane">Метан</label>
+      </span>
+
+      <br />
+      <button type="submit" id="confirm" class="confirm">Поиск</button>
+    </form>
+  </body>
+</html>
