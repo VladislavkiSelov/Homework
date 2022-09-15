@@ -1,120 +1,88 @@
 body {
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 26px;
-}
+font: 500 16px/1.625 "Roboto", "Arial", "Helvetica", "sans-serif";}
 
 .conteiner {
   max-width: 1110px;
   margin: 0 auto;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
 /* header */
-.top_part {
+.background1 {
   background-color: #eeeff1;
-  height: 700px;
 }
 
 .navigation {
   display: flex;
   padding-top: 80px;
-  font-family: "Roboto" Arial, Helvetica, sans-serif;
-  font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 26px;
   letter-spacing: 0.1em;
 }
 
+.main{
+  margin-right: 20px;
+}
+
 .navigation_text + .navigation_text {
-  padding-left: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .navigation_text a {
   text-decoration: none;
   color: black;
+  text-transform: uppercase;
 }
 
 .desin {
   padding-top: 160px;
-  font-family: "Roboto" Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: 500;
   font-size: 48px;
-
   color: #000000;
 }
 
 .fish_header {
   width: 540px;
-  padding-right: 570px;
-  padding-top: 60px;
-  padding-bottom: 65px;
-  font-family: "Roboto" Arial, Helvetica, sans-serif;
-  font-style: normal;
+  padding: 60px 570px 65px 0px;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 26px;
-
   color: #727272;
 }
 
 .write_me {
-  font-family: "Roboto" Arial, Helvetica, sans-serif;
-  font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 26px;
   letter-spacing: 0.1em;
   color: #ffffff;
+  padding-bottom: 140px;
 }
 
 .write_me a {
   text-decoration: none;
   color: #ffffff;
   display: inline-block;
-  padding-left: 40px;
-  padding-top: 20px;
+  padding: 20px 40px;
   background-color: #34547a;
-  padding-right: 40px;
-  padding-bottom: 20px;
+  text-transform: uppercase;
 }
 
+a:hover { background: rgb(5, 204, 187);}
+
+a.main{ color: #34547A;}
+
 /* Обо мне  */
-.about_me {
-  height: 360px;
-}
 
 .about_me h2 {
   padding-top: 110px;
   text-align: center;
-  font-family: "Roboto" Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: 500;
   font-size: 32px;
-  line-height: 38px;
+  line-height: 1.1875;
   color: #000000;
 }
 
-.about_me h3 {
-  padding-top: 50px;
+.about_me p {
+  padding: 50px 0px 100px 0px;
   text-align: center;
   width: 540px;
   display: block;
   margin: 0 auto;
-  font-family: "Roboto" Arial, Helvetica, sans-serif;
-  font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 26px;
-
   color: #727272;
 }
 
@@ -126,69 +94,53 @@ body {
 
 .block_project {
   display: flex;
-  height: 250px;
 }
 
 .block {
   display: flex;
   padding-top: 100px;
+  padding-bottom: 100px;
   margin: 0 auto;
 }
 
 .block p {
   padding-left: 20px;
-  padding-top: 5px;
 }
 
 .block_meaning1 {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
   font-size: 21px;
-  line-height: 25px;
+  line-height: 1.905;
   color: #ffffff;
 }
 
 .block_meaning2 {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 26px;
   color: #ffffff;
 }
 
 /* как я работаю */
 .work_shell {
   background-color: #eeeff1;
-  height: 1000px;
 }
 
 .work h2 {
   padding-top: 100px;
   text-align: center;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
   font-size: 32px;
-  line-height: 38px;
+  line-height: 1.1875;
   color: #000000;
 }
 
-.work h3 {
+.work p {
   width: 540px;
   margin: 0 auto;
-  padding-top: 50px;
-  font-family: "Roboto";
-  font-style: normal;
+  padding: 50px 0px 60px 0px;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 26px;
   color: #727272;
 }
 
 .work video {
-  padding-top: 60px;
+  padding: 0px 0px 100px 0px;
   width: 1100px;
   height: 600px;
 }
@@ -201,20 +153,15 @@ body {
 
 .bottom_panel h2 {
   padding-top: 50px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
   font-size: 21px;
-  line-height: 25px;
+  line-height: 1.1905;
   color: #ffffff;
 }
 
-.bottom_panel h3 {
+.bottom_panel p {
   padding-top: 20px;
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 400;
   font-size: 13px;
-  line-height: 21px;
+  line-height: 1.6154;
   color: #ffffff;
 }
