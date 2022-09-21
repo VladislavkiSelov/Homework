@@ -19,11 +19,27 @@
     <div class="background1">
       <header>
         <nav class="navigation conteiner">
-            <a href="./index.html" class="main">главная</a>
-            <a href="./index_ABOUT_THE_AUTHOR.html">об авторе</a>
-            <a href="./index_work.html">работы</a>
-            <a href="./process.html">процесс</a>
-            <a href="./index_contact.html">контакты</a>
+          <ul class="list">
+            <li><a href="./index.html" class="main">главная</a></li>
+            <li><a href="./index_ABOUT_THE_AUTHOR.html">об авторе</a></li>
+            <li><a href="./index_work.html">работы</a></li>
+            <li>
+              <a href="./process.html">процесс</a>
+              <ul class="dropdown">
+                <li><a href="">процесс №1</a></li>
+                <li><a href="">процесс №2</a></li>
+                <li>
+                  <a href="">процесс №3</a>
+                  <ul class="dropdown_item">
+                    <li><a href="">подраздел №1</a></li>
+                    <li><a href="">подраздел №2</a></li>
+                  </ul>
+                </li>
+                <li><a href="">процесс №4</a></li>
+              </ul>
+            </li>
+            <li><a href="./index_contact.html">контакты</a></li>
+          </ul>
         </nav>
       </header>
       <div class="conteiner">
@@ -33,9 +49,9 @@
           вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на
           латинице с начала XVI века.
         </p>
-      <div class="write_me">
-        <a href="./index_sing_to_me.html">написать мне</a>
-      </div>
+        <div class="write_me">
+          <a href="./index_sing_to_me.html">написать мне</a>
+        </div>
       </div>
     </div>
 
