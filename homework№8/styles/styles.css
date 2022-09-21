@@ -175,7 +175,7 @@ a.main{ color: #34547A;}
 }
 
 .clearfix::after{
-  content: ;
+  content:"";
   display: table;
   clear: both;
 }
