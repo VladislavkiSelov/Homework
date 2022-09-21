@@ -1,5 +1,6 @@
 body {
-font: 500 16px/1.625 "Roboto", "Arial", "Helvetica", "sans-serif";}
+  font: 500 16px/1.625 "Roboto", "Arial", "Helvetica", "sans-serif";
+}
 
 .conteiner {
   max-width: 1110px;
@@ -19,18 +20,17 @@ font: 500 16px/1.625 "Roboto", "Arial", "Helvetica", "sans-serif";}
   letter-spacing: 0.1em;
 }
 
-
-.list>li{
+.list > li {
   display: inline-block;
   text-transform: uppercase;
   position: relative;
 }
 
-.list>li:hover>a{
- background: rgb(5, 204, 187);
+.list > li:hover > a {
+  background: rgb(5, 204, 187);
 }
 
-.list>li:hover .dropdown{
+.list > li:hover .dropdown {
   display: inline-block;
 }
 
@@ -40,7 +40,7 @@ font: 500 16px/1.625 "Roboto", "Arial", "Helvetica", "sans-serif";}
   text-transform: uppercase;
   padding: 10px 20px;
 }
-.dropdown{
+.dropdown {
   background-color: #34547a;
   position: absolute;
   left: 0;
@@ -48,13 +48,13 @@ font: 500 16px/1.625 "Roboto", "Arial", "Helvetica", "sans-serif";}
   display: none;
 }
 
-.dropdown a::before{
+.dropdown a::before {
   content: "\25c9";
   color: white;
   padding-right: 10px;
 }
 
-.dropdown a{
+.dropdown a {
   display: block;
   width: 200px;
   margin: 0;
@@ -62,11 +62,11 @@ font: 500 16px/1.625 "Roboto", "Arial", "Helvetica", "sans-serif";}
   text-align: center;
 }
 
-.dropdown>li{
+.dropdown > li {
   position: relative;
 }
 
-.dropdown_item{
+.dropdown_item {
   position: absolute;
   background: #727272;
   left: 100%;
@@ -74,15 +74,13 @@ font: 500 16px/1.625 "Roboto", "Arial", "Helvetica", "sans-serif";}
   display: none;
 }
 
-.dropdown_item a::before{
+.dropdown_item a::before {
   content: "\25bd";
   color: white;
   padding-right: 10px;
 }
 
-
-
-.dropdown>li:hover .dropdown_item{
+.dropdown > li:hover .dropdown_item {
   display: inline-block;
 }
 
@@ -115,10 +113,13 @@ font: 500 16px/1.625 "Roboto", "Arial", "Helvetica", "sans-serif";}
   text-transform: uppercase;
 }
 
-a:hover { background: rgb(5, 204, 187)
+a:hover {
+  background: rgb(5, 204, 187);
 }
 
-a.main{ color: #34547A;}
+a.main {
+  color: #34547a;
+}
 
 /* Обо мне  */
 
@@ -147,7 +148,7 @@ a.main{ color: #34547A;}
 }
 
 .project .conteiner {
- font-size: 0; 
+  font-size: 0;
 }
 
 .block {
@@ -169,13 +170,13 @@ a.main{ color: #34547A;}
   display: block;
 }
 
-.block img{
+.block img {
   float: left;
   padding-right: 20px;
 }
 
-.clearfix::after{
-  content:"";
+.clearfix::after {
+  content: "";
   display: table;
   clear: both;
 }
