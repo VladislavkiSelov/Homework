@@ -117,6 +117,10 @@ a:hover {
   background: rgb(5, 204, 187);
 }
 
+a:active{
+  color: rgb(197, 27, 27);
+}
+
 a.main {
   color: #34547a;
 }
