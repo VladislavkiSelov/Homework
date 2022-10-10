@@ -17,17 +17,17 @@
 }
 
 .conteiner {
-  max-width: 1470px;
+  max-width: 1320px;
   margin: 0 auto;
-  background-color: #ffffff;
+  padding: 0 15px;
 }
 
 body {
   font: 15px/1.333 "Graphik LCG";
-  background-color: #e5e5e5;
 }
 
 /* header */
+
 .navigation {
   display: flex;
   justify-content: space-between;
@@ -67,7 +67,6 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 250px;
-  margin-right: 50px;
 }
 
 .nav_log_in:hover {
@@ -107,7 +106,7 @@ body {
 .main_left h1 {
   font: 600 65px/1.08 "Graphik LCG";
   width: 550px;
-  padding: 0 50px 50px 0;
+  padding-bottom: 50px;
 }
 
 .main_left h2 {
@@ -136,8 +135,9 @@ body {
 /* brands */
 .brands {
   background: #ff9c7d;
-  padding: 110px 95px 105px 105px;
+  padding: 110px 0 105px 0;
 }
+
 .texth2_center {
   display: flex;
   justify-content: center;
@@ -156,7 +156,7 @@ body {
 
 /* table1 */
 .box_table {
-  padding: 90px 75px 150px 75px;
+  padding: 90px 0 150px 0;
 }
 
 .table1 {
@@ -208,10 +208,10 @@ body {
 /* lolocalize */
 .wrapper_localize {
   background-color: #fff8e4;
-  padding: 120px 140px 75px 130px;
+  padding: 120px 0 75px 0;
 }
 
-.wrapper_localize > h2 {
+.wrapper_localize h2 {
   padding-bottom: 85px;
   text-align: center;
   font: 600 50px/1.2 "Graphik LCG";
@@ -251,7 +251,7 @@ body {
 
 /* block */
 .block {
-  padding: 155px 75px 185px 75px;
+  padding: 155px 0 185px 0;
 }
 
 .block h2 {
@@ -292,11 +292,14 @@ body {
 }
 
 /* block man */
+.box_man_main {
+  background-color: #c9e8f2;
+  padding: 65px 0 105px 0;
+}
+
 .block_man_main {
   display: flex;
   justify-content: space-between;
-  background-color: #c9e8f2;
-  padding: 65px 75px 105px 75px;
 }
 
 .block_man h2 {
@@ -311,11 +314,14 @@ body {
 }
 
 /* block cake */
-.block_cake {
+.box_cake {
   background-color: #dabc98;
+  padding: 90px 0 90px 0;
+}
+
+.block_cake {
   display: flex;
   align-items: center;
-  padding: 90px 140px 90px 55px;
 }
 
 .block_cake > img {
@@ -364,13 +370,15 @@ body {
 }
 
 /* block_expectation*/
+.box_block_expectation {
+  background-color: #ff9c7d;
+  padding: 120px 0 160px;
+}
 
 .block_expectation {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #ff9c7d;
-  padding: 120px 0 160px;
 }
 
 .block_expectation h2 {
@@ -399,7 +407,7 @@ body {
 .footer_top {
   display: flex;
   justify-content: space-between;
-  padding: 95px 85px 95px 75px;
+  padding: 95px 0 95px 0;
 }
 
 .footer_box1 {
@@ -462,7 +470,7 @@ body {
   border-top: 1px solid black;
   display: flex;
   justify-content: space-between;
-  padding: 50px 150px 40px 75px;
+  padding: 50px 0 40px 0;
 }
 
 .footer_bottom_left {
