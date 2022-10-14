@@ -27,6 +27,14 @@ body {
 
 /* header */
 
+.menu_checkbox {
+  display: none;
+}
+
+.menu {
+  display: none;
+}
+
 .navigation {
   display: flex;
   justify-content: space-between;
@@ -621,7 +629,87 @@ body {
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 982px) {
+  /* BURGER */
+
+  .menu {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    padding: 0;
+  }
+  .line {
+    fill: none;
+    stroke: black;
+    stroke-width: 6;
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+      stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .line1 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+  }
+  .line2 {
+    stroke-dasharray: 60 60;
+    stroke-width: 6;
+  }
+  .line3 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+  }
+  .menu_checkbox:checked + .menu .line1 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+  }
+  .menu_checkbox:checked + .menu .line2 {
+    stroke-dasharray: 1 60;
+    stroke-dashoffset: -30;
+    stroke-width: 6;
+  }
+  .menu_checkbox:checked + .menu .line3 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+  }
+
+  .menu_checkbox {
+    display: none;
+  }
+
+  .menu {
+    position: absolute;
+    top: 2px;
+    left: 120px;
+  }
+
+  /* header */
+
+  .navigation {
+    position: relative;
+  }
+
+  .nav_text {
+    display: block;
+    position: absolute;
+    left: 0%;
+    transform: translateX(-150%);
+    transition: 0.8s;
+  }
+
+  .menu_checkbox:checked ~ .nav_text {
+    transform: translateX(0%);
+  }
+
+  .nav_text a {
+    display: block;
+    padding: 10px;
+    background-color: #ff6336;
+    color: #ffffff;
+    margin: 5px;
+  }
+
   .conteiner {
     max-width: 90%;
   }
@@ -643,6 +731,14 @@ body {
 
   .nav_log_in {
     margin-bottom: 2%;
+  }
+
+  .nav_text a {
+    display: block;
+    padding: 10px;
+    background-color: #ff6336;
+    color: #ffffff;
+    margin: 5px;
   }
 
   /*brands */
@@ -740,13 +836,16 @@ body {
     max-width: 90%;
   }
 
-  .nav_text {
-    display: block;
+  .navigation {
+    position: relative;
   }
 
-
   .nav_text a {
-    padding: 0;
+    display: block;
+    padding: 10px;
+    background-color: #ff6336;
+    color: #ffffff;
+    margin: 5px;
   }
 
   .nav_left {
@@ -933,8 +1032,4 @@ body {
   .footer_bottom_left p {
     width: 50%;
   }
-
-  /* burger */
-
-
 }
