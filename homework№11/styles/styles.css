@@ -864,6 +864,15 @@ body {
   }
 
   /* main */
+
+  .main_content {
+    padding: 70px 0 90px;
+  }
+
+  .main_left {
+    width: 100%;
+  }
+
   .main_left > .nav_try_it_free {
     margin-bottom: 10px;
     padding: 15px 33px;
@@ -879,7 +888,7 @@ body {
 
   .main_left h1 {
     width: 100%;
-    font-size: 60px;
+    font-size: 50px;
   }
 
   .main_left h2 {
@@ -892,8 +901,13 @@ body {
   }
 
   /* brands */
+  .brands {
+    padding: 60px 0 50px;
+  }
+
   .brands h2 {
     width: 100%;
+    font-size: 40px;
   }
 
   .photo_brands {
@@ -908,12 +922,22 @@ body {
 
   /* table1 */
 
+  .box_table {
+    padding: 50px 0 70px;
+  }
+
+  .table_left {
+    width: 100%;
+  }
+
   .table1 {
     display: block;
+    padding-bottom: 70px;
   }
 
   .table_left h2 {
     width: 100%;
+    font-size: 40px;
   }
 
   .table_left p {
@@ -928,6 +952,7 @@ body {
   /* table2 */
   .table2 {
     display: block;
+    padding-bottom: 70px;
   }
 
   /* table3 */
@@ -945,7 +970,15 @@ body {
     width: 100%;
   }
 
+  .wrapper_localize h2 {
+    font-size: 40px;
+  }
+
   /* block */
+
+  .block {
+    padding: 70px 0 90px;
+  }
 
   .block_table {
     width: 100%;
@@ -956,7 +989,15 @@ body {
     padding-bottom: 20px;
   }
 
+  .block h2 {
+    font-size: 40px;
+  }
+
   /* block man */
+
+  .block_man {
+    width: 100%;
+  }
 
   .block_man_main {
     display: block;
@@ -964,6 +1005,7 @@ body {
 
   .block_man h2 {
     width: 100%;
+    font-size: 25px;
   }
 
   .block_man_main img {
@@ -997,8 +1039,13 @@ body {
 
   /* .block_bird  */
 
+  .block_bird {
+    padding: 80px 0;
+  }
+
   .block_bird h2 {
     width: 100%;
+    font-size: 50px;
   }
 
   .block_bird p {
@@ -1011,9 +1058,13 @@ body {
 
   /* block_expectation */
 
+  .box_block_expectation {
+    padding: 60px 0 80px;
+  }
+
   .block_expectation h2 {
     width: 100%;
-    font-size: 60px;
+    font-size: 50px;
   }
 
   .block_expectation p {
@@ -1023,6 +1074,7 @@ body {
   /* footer*/
   .footer_top {
     flex-direction: column;
+    padding: 40px 0;
   }
 
   .footer_box2 p {
