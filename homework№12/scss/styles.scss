@@ -1,0 +1,238 @@
+@font-face {
+  font-family: "Graphik LCG";
+  src: url("../fonts/GraphikLCG-Semibold.woff2") format("woff2"),
+    url("../fonts/GraphikLCG-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Graphik LCG";
+  src: url("../fonts/GraphikLCG-Regular.woff2") format("woff2"),
+    url("../fonts/GraphikLCG-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+$primary-font-color: #ff6336;
+
+%roundent {
+  border-radius: 5px;
+}
+
+body {
+  font: 15px/1.333 "Graphik LCG";
+}
+
+.conteiner {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 0;
+  border-bottom: 1px solid black;
+  position: relative;
+
+  .menu_checkbox {
+    display: none;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .nav_left {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 830px;
+  }
+
+  .nav_text {
+    display: flex;
+    justify-content: space-between;
+
+    a {
+      text-decoration: none;
+      color: black;
+      padding: 0 25px;
+      list-style-type: none;
+
+      &:hover {
+        color: $primary-font-color;
+      }
+    }
+  }
+
+  .nav_right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+  }
+}
+
+.button {
+  font: 600 16px/1 "Graphik LCG";
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  padding: 15px 35px;
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  @extend %roundent;
+
+  &:hover {
+    background-color: $primary-font-color;
+  }
+}
+
+.button_try_it_free {
+  @extend .button;
+  @extend %roundent;
+  background-color: $primary-font-color;
+  padding: 15px 21px;
+  color: white;
+
+  &:hover {
+    background-color: black;
+  }
+}
+
+@media all and (orientation: landscape) and (max-width: 1200px) {
+  .conteiner {
+    max-width: 90%;
+  }
+
+  .navigation {
+    .nav_left {
+      width: auto;
+    }
+
+    .nav_text a {
+      padding: 0 15px;
+    }
+
+  }
+}
+
+@media (max-width: 1200px) {
+  .conteiner {
+    max-width: 90%;
+  }
+
+  .nav_left {
+    width: auto;
+  }
+
+  .nav_text a {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 1110px) {
+
+  /* BURGER */
+  .navigation {
+    .menu {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      padding: 0;
+      position: absolute;
+      top: 2px;
+      left: 120px;
+    }
+
+    .line {
+      fill: none;
+      stroke: black;
+      stroke-width: 6;
+      transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+        stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .line1 {
+      stroke-dasharray: 60 207;
+      stroke-width: 6;
+    }
+
+    .line2 {
+      stroke-dasharray: 60 60;
+      stroke-width: 6;
+    }
+
+    .line3 {
+      stroke-dasharray: 60 207;
+      stroke-width: 6;
+    }
+
+    .menu_checkbox:checked+.menu .line1 {
+      stroke-dasharray: 90 207;
+      stroke-dashoffset: -134;
+      stroke-width: 6;
+    }
+
+    .menu_checkbox:checked+.menu .line2 {
+      stroke-dasharray: 1 60;
+      stroke-dashoffset: -30;
+      stroke-width: 6;
+    }
+
+    .menu_checkbox:checked+.menu .line3 {
+      stroke-dasharray: 90 207;
+      stroke-dashoffset: -134;
+      stroke-width: 6;
+    }
+
+    .menu_checkbox {
+      display: none;
+
+      &:checked~.nav_text {
+        transform: translateX(0%);
+      }
+
+    }
+
+    .nav_text {
+      display: block;
+      position: absolute;
+      left: 0%;
+      transform: translateX(-150%);
+      transition: 0.8s;
+
+      a {
+        display: block;
+        padding: 10px;
+        background-color: #ff6336;
+        color: #ffffff;
+        margin: 5px;
+
+      }
+    }
+
+    .nav_left {
+      display: block;
+      width: auto;
+    }
+
+    .nav_right {
+      flex-direction: column;
+      justify-content: start;
+      align-items: flex-end;
+    }
+
+    .nav_log_in {
+      margin-bottom: 2%;
+    }
+  }
+
+  .button_try_it_free {
+    margin-top: 10px;
+  }
+}
