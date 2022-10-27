@@ -1,0 +1,40 @@
+.header_box {
+    padding: 33px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    position: absolute;
+    left: 0;
+    right: 0;
+
+    .header_left {
+        display: flex;
+
+        p {
+            font-size: 16px;
+            font-weight: $second-font-weight;
+            padding-left: 10px;
+            color: $white;
+        }
+    }
+
+    .menu {
+        width: 445px;
+        display: flex;
+        justify-content: space-between;
+
+        a {
+            text-transform: uppercase;
+            color: $white;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: $second-font-weight;
+
+            &:hover {
+                color: $black;
+                ;
+            }
+        }
+    }
+}

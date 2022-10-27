@@ -1,0 +1,22 @@
+.btn {
+    padding: 12px 28px;
+    border: 1px solid $white;
+    border-radius: 6px;
+    background-color: transparent;
+    color: $white;
+    font-family: 'Lato';
+    font-size: 14px;
+    font-weight: $first-font-weight;
+
+    &:hover {
+        color: $black;
+    }
+}
+
+.btn_sing_in {
+    @extend.btn;
+    background-color: $white;
+    color: $orange;
+    padding: 15px 52px;
+    text-transform: uppercase;
+}

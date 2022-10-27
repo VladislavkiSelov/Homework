@@ -1,0 +1,50 @@
+.footer_box {
+    background: #FAFAFA;
+
+    .footer_wraper {
+        padding: 85px 0;
+        display: flex;
+        justify-content: space-between;
+
+        h2 {
+            padding-bottom: 30px;
+            font-size: 18px;
+            font-weight: $second-font-weight;
+        }
+
+        h3 {
+            padding-top: 140px;
+
+        }
+
+        a {
+            display: block;
+            padding-bottom: 10px;
+            text-decoration: none;
+            color: $black;
+
+            &:hover {
+                color: $orange;
+            }
+        }
+    }
+
+    .footer_content {
+
+        p {
+            width: 191px;
+        }
+    }
+
+    .social_link:hover svg * {
+        fill: $orange;
+        ;
+    }
+
+    .social_link_box {
+        a {
+            display: inline-block;
+            padding-right: 13px;
+        }
+    }
+}
