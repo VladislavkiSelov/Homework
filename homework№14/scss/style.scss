@@ -1,3 +1,4 @@
+@import'./layout/container.scss';
 @import'./base/variables';
 @import'./base/typography';
 @import'../fonts/fonts.css';
@@ -5,6 +6,10 @@
 @import'./layout/main';
 @import'./layout/footer';
 @import'./components/buttons';
+@import'./components/humburger';
+
+
+
 
 body {
     font-family: 'Lato';
@@ -13,10 +18,25 @@ body {
     line-height: 1.67;
 }
 
-.container {
-    width: 1110px;
-    margin: 0 auto;
+#checkbox_roggle{
+@media (max-width: 778px) { 
+    &:checked {
+        ~.navigation{
+            .menu {
+                display: block;
+                transform: translateX(0%);
+                transition: all 0.8s;
+            }
+        } 
+    }
 }
+}
+
+
+// .container {
+//     width: 1110px;
+//     margin: 0 auto;
+// }
 
 // .header_box {
 //     padding: 33px 0;
@@ -99,7 +119,7 @@ body {
 //                 font-size: 72px;
 //                 font-weight: $second-font-weight;
 //                 text-transform: uppercase;
-                
+
 //             }
 
 //             h2 {
@@ -193,7 +213,7 @@ body {
 //     .technology_box {
 //         .technology_wraper {
 //             padding: 65px 110px;
-            
+
 
 //             >h2 {
 //                 text-align: center;

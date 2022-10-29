@@ -1,0 +1,46 @@
+#checkbox_roggle {
+    display: none;
+}
+
+.humburger {
+    display: none;
+    cursor: pointer;
+    padding: 20px 0;
+    position: absolute;
+    right: 10px;
+    top: 35px;
+
+    @media (max-width: 778px) {
+        display: block;
+    }
+}
+
+.humburger_line {
+    background-color: $white;
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 24px;
+
+    &::after {
+        background-color: $white;
+        content: '';
+        display: block;
+        position: absolute;
+        transition: all 0.3s;
+        width: 100%;
+        height: 100%;
+        top: -7px;
+    }
+
+    &::before {
+        background-color: $white;
+        content: '';
+        display: block;
+        position: absolute;
+        transition: all 0.3s;
+        width: 100%;
+        height: 100%;
+        top: 7px;
+    }
+}
