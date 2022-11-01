@@ -1,0 +1,30 @@
+@import'./base/reset2';
+@import'./base/container';
+@import'./base/fonts';
+@import'./base/typography';
+@import'./base/variables';
+@import'./layout/header';
+@import'./layout/main';
+@import'./layout/footer.scss';
+@import'./components/humburger';
+
+
+body {
+    font-family: 'Montserrat';
+    font-size: $text_p;
+    font-weight: $font_weight_second;
+    line-height: $line-height_p;
+    background-color: rgb(42, 186, 164);
+}
+
+#checkbox_roggle{
+    @media (max-width: 496px) { 
+        &:checked {
+            ~.navigation_bottom{
+                    display: block;
+                    transform: translateY(0%);
+                    transition: all 0.8s;
+            } 
+        }
+    }
+    }

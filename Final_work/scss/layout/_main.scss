@@ -1,0 +1,66 @@
+.box_main {
+    background: url(../img/Homepage/logoH.svg), $color_gradient_supersoft;
+    background-repeat: no-repeat;
+    background-position: 50% 0, 100%;
+   
+
+
+    h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        position: relative;
+        font-size: $text_h1;
+        font-weight: $font_weight_basic;
+        color: $white;
+    }
+}
+
+.main_tb1 {
+
+    a {
+        height: 42px;
+        width: 42px;
+        border: 2px solid #FFFFFF;
+        display: inline-block;
+        border-radius: 50%;
+        position: absolute;
+        left: 50%;
+        bottom: 50px;
+        align-items: center;
+
+        &::before {
+            content: '';
+            border-bottom: 2px solid #FFFFFF;
+            border-left: 2px solid #FFFFFF;
+            height: 10px;
+            width: 10px;
+            transform: rotate(-45deg) translate(7px, 14px);
+            display: inline-block;
+        }
+    }
+}
+
+
+.main_tb2 {
+    display: flex;
+    justify-content: center;
+}
+.tb2_list{
+display: flex;
+flex-direction: column;
+padding-right: 60px;
+border-right: 4px solid $border_color ;
+a{
+    padding-bottom: 30px;
+}
+}
+
+.tb2_text{
+width: 581px;
+padding-left: 60px;
+h2{
+    padding-bottom: 30px;
+}
+}

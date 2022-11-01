@@ -1,0 +1,355 @@
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20080212 */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+  outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+  text-decoration: none;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+.wraper_header {
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: 25% 75%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+@media (max-width: 768px) {
+  .wraper_header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 496px) {
+  .wraper_header {
+    padding-top: 10px;
+  }
+  .wraper_header::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 45px;
+    background: rgba(245, 245, 250, 0.2);
+    z-index: -1;
+  }
+}
+
+.header_left {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .header_left {
+    order: 2;
+  }
+}
+
+.navigation_top {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.navigation_top p {
+  color: #FFFFFF;
+}
+.navigation_top a {
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+.navigation_top span:empty {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #E6E6F0;
+  display: inline-block;
+  margin: 0 6px 0 6px;
+  color: #FFFFFF;
+}
+@media (max-width: 768px) {
+  .navigation_top {
+    order: 1;
+  }
+}
+@media (max-width: 496px) {
+  .navigation_top {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 32px 32px 32px 1fr;
+    justify-items: end;
+  }
+  .navigation_top a {
+    margin-bottom: 25px;
+  }
+  .navigation_top .social_link {
+    display: none;
+  }
+  .navigation_top span:empty {
+    display: none;
+  }
+  .navigation_top p {
+    display: none;
+  }
+}
+
+.language {
+  margin-right: 14px;
+}
+
+.eng {
+  margin-right: 0;
+  background: #F0145A;
+  border-radius: 8px;
+  padding: 5px 7px;
+}
+
+.navigation_bottom {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  display: flex;
+  justify-content: end;
+}
+.navigation_bottom a {
+  margin-left: 15px;
+  text-decoration: none;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+@media (max-width: 768px) {
+  .navigation_bottom {
+    justify-content: flex-start;
+    order: 3;
+  }
+  .navigation_bottom a {
+    margin-left: 0;
+    margin-right: 15px;
+  }
+}
+@media (max-width: 496px) {
+  .navigation_bottom {
+    display: block;
+    transform: translateY(100%);
+    transition: all 0.8s;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    padding-top: 64px;
+    background: #FFFFFF;
+    border-radius: 12px 12px 0px 0px;
+    margin: 0 8px;
+  }
+  .navigation_bottom a {
+    color: #24A3FF;
+  }
+  .navigation_bottom li {
+    background: #F5F5FA;
+    margin: 0 12px 15px 12px;
+    border-radius: 12px;
+  }
+}
+
+.box_main {
+  background: url(../img/Homepage/logoH.svg), linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+  background-repeat: no-repeat;
+  background-position: 50% 0, 100%;
+}
+.box_main h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+  font-size: 38px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.main_tb1 a {
+  height: 42px;
+  width: 42px;
+  border: 2px solid #FFFFFF;
+  display: inline-block;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  bottom: 50px;
+  align-items: center;
+}
+.main_tb1 a::before {
+  content: "";
+  border-bottom: 2px solid #FFFFFF;
+  border-left: 2px solid #FFFFFF;
+  height: 10px;
+  width: 10px;
+  transform: rotate(-45deg) translate(7px, 14px);
+  display: inline-block;
+}
+
+.main_tb2 {
+  display: flex;
+  justify-content: center;
+}
+
+.tb2_list {
+  display: flex;
+  flex-direction: column;
+  padding-right: 60px;
+  border-right: 4px solid rgba(255, 255, 255, 0.3);
+}
+.tb2_list a {
+  padding-bottom: 30px;
+}
+
+.tb2_text {
+  width: 581px;
+  padding-left: 60px;
+}
+.tb2_text h2 {
+  padding-bottom: 30px;
+}
+
+#checkbox_roggle {
+  display: none;
+}
+
+.humburger {
+  display: none;
+  cursor: pointer;
+  padding: 20px 0;
+  position: absolute;
+  right: 10px;
+  top: 65px;
+}
+@media (max-width: 496px) {
+  .humburger {
+    display: block;
+  }
+}
+
+.humburger_line {
+  background-color: #FFFFFF;
+  display: block;
+  height: 2px;
+  position: relative;
+  width: 24px;
+}
+.humburger_line::after {
+  background-color: #FFFFFF;
+  content: "";
+  display: block;
+  position: absolute;
+  transition: all 0.3s;
+  width: 100%;
+  height: 100%;
+  top: -7px;
+}
+.humburger_line::before {
+  background-color: #FFFFFF;
+  content: "";
+  display: block;
+  position: absolute;
+  transition: all 0.3s;
+  width: 100%;
+  height: 100%;
+  top: 7px;
+}
+
+body {
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.625;
+  background-color: rgb(42, 186, 164);
+}
+
+@media (max-width: 496px) {
+  #checkbox_roggle:checked ~ .navigation_bottom {
+    display: block;
+    transform: translateY(0%);
+    transition: all 0.8s;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
