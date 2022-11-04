@@ -7,6 +7,9 @@
 @import'./layout/main';
 @import'./layout/footer.scss';
 @import'./components/humburger';
+@import'./layout/forms';
+@import'./components/button_form ';
+
 
 
 body {
@@ -14,8 +17,17 @@ body {
     font-size: $text_p;
     font-weight: $font_weight_second;
     line-height: $line-height_p;
-    background-color: rgb(42, 186, 164);
 }
+
+img{
+max-width: 100%;       
+ height: auto;
+}
+
+a{
+    text-decoration: none;
+}
+
 
 #checkbox_roggle{
     @media (max-width: 496px) { 
