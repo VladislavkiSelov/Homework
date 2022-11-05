@@ -9,3 +9,10 @@
     @extend.container;
     max-width: 590px;
 }
+
+.container_form_no_margin{
+    @extend.container;
+    @extend.container_form;
+    margin: 0;
+    padding: 0;
+}

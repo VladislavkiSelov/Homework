@@ -12,6 +12,7 @@
 
     @media (max-width: 496px) {
         display: block;
+ 
     }
 }
 
@@ -21,6 +22,7 @@
     height: 2px;
     position: relative;
     width: 24px;
+   
 
     &::after {
         background-color: $white;
@@ -43,4 +45,17 @@
         height: 100%;
         top: 7px;
     }
+}
+
+.humburger_line_black{
+@extend.humburger_line;
+    background-color: black;
+    &::after {
+        background-color: black;
+    }
+
+    &::before {
+        background-color: black; 
+    }
+    
 }

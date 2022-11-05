@@ -1,14 +1,12 @@
 .box_form {
     background: #323264;
     opacity: 0.7;
-    height: 100vh;
     align-items: center;
     display: flex;
-
+    height: 100vh;
 }
 
 .wraper_form {
-    width: 100%;
     padding: 30px;
     background: #F5F5FA;
     box-shadow: 0px 15px 80px rgba(40, 40, 86, 0.5);
@@ -20,6 +18,7 @@
         background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+
         @media (max-width: 496px) {
             font-size: $text_h2;
         }
@@ -27,6 +26,7 @@
 
     svg {
         padding: 7px;
+
         &:hover {
             background: #E6E6F0;
             border-radius: 8px;
@@ -59,13 +59,99 @@ input {
     margin-bottom: 15px;
     border: 0;
     border-radius: 8px;
-
-     &::placeholder {
+    &::placeholder {
         padding: 15px;
         color: #B3B3BA;
-       
     }
 }
+.message{
+padding: 15px 0 90px 0;
+}
+
+
+.box_form_white {
+    @extend.box_form;
+    background: $white;
+    justify-content: center;
+    opacity: 1;
+    padding-top: 176px;
+    padding-bottom: 60px;
+    height: auto;
+    @media (max-width: 768px) {
+       display: block;
+       padding-top: 280px;
+    }
+}
+
+.contact {
+    margin-right: 60px;
+    width: 100%;
+
+    a {
+        display: block;
+        &:hover{
+            color: $color_accent;
+        }
+    }
+
+    p {
+        border-bottom: 4px solid $color_grey_separator;
+        padding-bottom: 30px;
+        font-size: $text_p_big;
+    }
+
+    .tel {
+        padding-top: 30px;
+        padding-bottom: 15px;
+        font-size: $text_p_big;
+    }
+
+    .email {
+        border-bottom: 4px solid $color_grey_separator;
+        padding-bottom: 30px;
+        padding-bottom: 30px;
+        font-size: $text_p_big;
+    }
+
+    .social_link {
+        padding-top: 30px;
+        display: flex;
+
+        p {
+            color: $color_active_regular;
+            width: 105px;
+            padding-left: 10px;
+            font-size: $text_a_small;
+            font-weight: $font_weight_basic;
+            border-bottom: 0;
+            &:hover {
+
+                color: $color_accent;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -80,3 +166,91 @@ input::-webkit-inner-spin-button {
 input[type=number] {
     -moz-appearance: textfield;
 }
+
+
+
+
+
+
+
+// .box_form {
+//     background: #323264;
+//     opacity: 0.7;
+//     align-items: center;
+//     display: flex;
+
+// }
+
+// .wraper_form {
+//     width: 100%;
+//     padding: 30px;
+//     background: #F5F5FA;
+//     box-shadow: 0px 15px 80px rgba(40, 40, 86, 0.5);
+//     border-radius: 12px;
+
+//     h1 {
+//         font-size: $text_h1;
+//         font-weight: $font_weight_basic;
+//         background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+//         -webkit-background-clip: text;
+//         -webkit-text-fill-color: transparent;
+//         @media (max-width: 496px) {
+//             font-size: $text_h2;
+//         }
+//     }
+
+//     svg {
+//         padding: 7px;
+//         &:hover {
+//             background: #E6E6F0;
+//             border-radius: 8px;
+//             padding: 7px;
+//         }
+//     }
+// }
+
+// .text_top {
+//     display: flex;
+//     justify-content: space-between;
+// }
+
+// .forms {
+//     display: flex;
+//     flex-direction: column;
+
+//     p {
+//         margin-bottom: 15px;
+//         text-transform: uppercase;
+//         font-weight: $font_weight_basic;
+//         color: #B3B3BA;
+//     }
+// }
+
+// input {
+//     display: block;
+//     width: 100%;
+//     padding: 15px 0;
+//     margin-bottom: 15px;
+//     border: 0;
+//     border-radius: 8px;
+
+//      &::placeholder {
+//         padding: 15px;
+//         color: #B3B3BA;
+
+//     }
+// }
+
+
+
+// /* Chrome, Safari, Edge, Opera */
+// input::-webkit-outer-spin-button,
+// input::-webkit-inner-spin-button {
+//     -webkit-appearance: none;
+//     margin: 0;
+// }
+
+// /* Firefox */
+// input[type=number] {
+//     -moz-appearance: textfield;
+// }

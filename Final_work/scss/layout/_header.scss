@@ -53,16 +53,14 @@
     }
 
     a {
-        text-decoration: none;
         font-size: $text_a_small;
         font-weight: $font_weight_basic;
         color: $white;
-        &:hover {  
+
+        &:hover {
             color: $color_accent;
         }
     }
-
-
 
     span {
         &:empty {
@@ -107,6 +105,24 @@
     }
 }
 
+.navigation_top_back_grey {
+    @extend.navigation_top;
+
+    a {
+        color: $color_grey_text;
+
+        &:hover {
+            color: $color_accent;
+        }
+    }
+
+    p {
+        color: $color_grey_text;
+    }
+}
+
+
+
 .social_link {
     &:hover {
         svg {
@@ -123,11 +139,9 @@
 
 .eng {
     margin-right: 0;
-    background: #F0145A;
-    border-radius: 8px;
-    padding: 5px 7px;
-    pointer-events: none
+
 }
+
 
 .navigation_bottom {
     grid-column-start: 2;
@@ -161,32 +175,91 @@
     }
 
     @media (max-width: 496px) {
-            display: block;
-            transform: translateY(100%);
-            transition: all 0.8s;
-            position: fixed;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            text-align: center;
-            padding-top: 64px;
-            background: $white;
-            border-radius: 12px 12px 0px 0px;
-            margin: 0 8px;
-            
-            a {
-                color: $blue;
+        display: block;
+        transform: translateY(100%);
+        transition: all 0.8s;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        text-align: center;
+        padding-top: 64px;
+        background: $white;
+        border-radius: 12px 12px 0px 0px;
+        margin: 0 8px;
 
-                &:hover {
-                    background-size: 0;
-                    color: $color_accent;
-                }
+        a {
+            color: $blue;
+
+            &:hover {
+                background-size: 0;
+                color: $color_accent;
             }
+        }
 
-            li {
-                background: $color_grey_bg;
-                margin: 0 12px 15px 12px;
-                border-radius: 12px;
+        li {
+            background: $color_grey_bg;
+            margin: 0 12px 15px 12px;
+            border-radius: 12px;
+        }
+    }
+}
+
+.wraper_header_white{
+@extend.wraper_header;
+
+@media (max-width: 496px) {
+    &::before {
+        background: $color_grey_bg;
+    }
+}
+}
+
+
+.navigation_bottom_back_grey {
+    @extend.navigation_bottom;
+    a {
+        color: $color_active_regular;
+        background: no-repeat 0 100%;
+        background-image: linear-gradient(currentColor, currentColor);
+        background-size: 0% 2px;
+        transition: background-size .5s ease;
+
+        &:hover {
+            background-size: 100% 2px;
+        }
+    }
+}
+
+.active{
+    a{
+        color: $color_accent;
+        border-bottom: 2px solid $color_accent;
+        pointer-events: none
+    }
+}
+
+.active_button{
+    background: #F0145A;
+    border-radius: 8px;
+    padding: 5px 7px;
+    pointer-events: none;
+}
+
+.social_link_grey {
+    svg {
+        * {
+            fill: $color_grey_text;
+        }
+    }
+    &:hover {
+        svg {
+            * {
+                fill: $color_accent;
             }
         }
     }
+    @media (max-width: 496px) {
+        display: none;
+}
+}

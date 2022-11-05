@@ -3,21 +3,12 @@
 }
 
 .wraper_footer {
-    padding: 30px 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
-    position: relative;
-
-    &::before {
-        content: '';
-        border: 2px solid $color_grey_separator;
-        left: 0;
-        right: 0;
-        position: absolute;
-        top: 0;
-        z-index: 10;
-    }
+    
 
     @media (max-width: 640px) {
         grid-template-columns: 1fr;
