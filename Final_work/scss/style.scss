@@ -10,8 +10,6 @@
 @import'./layout/forms';
 @import'./components/button_form ';
 
-
-
 body {
     font-family: 'Montserrat';
     font-size: $text_p;
@@ -19,24 +17,73 @@ body {
     line-height: $line-height_p;
 }
 
-img{
-max-width: 100%;       
- height: auto;
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-a{
+.main {
+    flex-grow: 1;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
     text-decoration: none;
 }
 
-
-#checkbox_roggle{
-    @media (max-width: 496px) { 
+#checkbox_roggle {
+    @media (max-width: 496px) {
         &:checked {
-            ~.navigation_bottom{
-                    display: block;
-                    transform: translateY(0%);
-                    transition: all 0.8s;
-            } 
+            ~.navigation_bottom {
+                display: block;
+                transform: translateY(0%);
+                transition: all 0.8s;
+            }
         }
     }
+}
+
+#checkbox_roggle {
+    @media (max-width: 496px) {
+        &:checked {
+            ~.humburger {
+                background: $color_grey_text;
+                border-radius: 8px;
+                // padding: 19px 7px;
+                padding-left: 7px;
+                padding-bottom: 19px;
+                padding-right: 7px;
+                padding-top: 19px;
+            }
+        }
     }
+}
+
+
+
+
+
+
+
+
+
+// #checkbox_roggle {
+//     @media (max-width: 496px) {
+//         &:checked {
+//             ~.humburger {
+//                 background: $color_grey_text;
+//                 border-radius: 8px;
+//                 // padding: 19px 7px;
+//                 padding-left: 7px;
+//                 padding-bottom: 19px;
+//                 padding-right: 7px;
+//                 padding-top: 19px;
+//             }
+//         }
+//     }
+// }

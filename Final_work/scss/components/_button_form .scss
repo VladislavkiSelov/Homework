@@ -11,6 +11,20 @@
     }
     &:active{
         background: $color_active_active;
+    } 
+}
+
+.active{
+    a{
+        color: $color_accent;
+        border-bottom: 2px solid $color_accent;
+        pointer-events: none
     }
-   
+}
+
+.active_button{
+    background: #F0145A;
+    border-radius: 8px;
+    padding: 5px 7px;
+    pointer-events: none;
 }
