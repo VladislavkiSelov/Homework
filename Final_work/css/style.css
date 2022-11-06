@@ -971,6 +971,12 @@ input[type=number] {
   font-weight: 700;
   width: 100%;
 }
+.button_form:hover {
+  background: #0085FF;
+}
+.button_form:active {
+  background: #006CCF;
+}
 
 body {
   font-family: "Montserrat";

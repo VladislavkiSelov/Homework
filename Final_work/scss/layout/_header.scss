@@ -15,7 +15,6 @@
 
     @media (max-width: 496px) {
         padding-top: 10px;
-
         &::before {
             content: '';
             position: absolute;
@@ -28,6 +27,15 @@
         }
     }
 }
+
+.wraper_header_white{
+    @extend.wraper_header;
+    @media (max-width: 496px) {
+        &::before {
+            background: $color_grey_bg;
+        }
+    }
+    }
 
 .header_left {
     grid-column-start: 1;
@@ -121,8 +129,6 @@
     }
 }
 
-
-
 .social_link {
     &:hover {
         svg {
@@ -139,9 +145,7 @@
 
 .eng {
     margin-right: 0;
-
 }
-
 
 .navigation_bottom {
     grid-column-start: 2;
@@ -165,8 +169,7 @@
     }
 
     @media (max-width: 768px) {
-        justify-content: flex-start;
-        order: 3;
+        justify-content: flex-start;     
 
         a {
             margin-left: 0;
@@ -205,17 +208,6 @@
     }
 }
 
-.wraper_header_white{
-@extend.wraper_header;
-
-@media (max-width: 496px) {
-    &::before {
-        background: $color_grey_bg;
-    }
-}
-}
-
-
 .navigation_bottom_back_grey {
     @extend.navigation_bottom;
     a {
@@ -224,7 +216,6 @@
         background-image: linear-gradient(currentColor, currentColor);
         background-size: 0% 2px;
         transition: background-size .5s ease;
-
         &:hover {
             background-size: 100% 2px;
         }

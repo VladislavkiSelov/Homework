@@ -6,4 +6,11 @@
     color: $white;
     font-weight: $font_weight_basic;
     width: 100%;
+    &:hover{
+        background: $color_active_hover;
+    }
+    &:active{
+        background: $color_active_active;
+    }
+   
 }
