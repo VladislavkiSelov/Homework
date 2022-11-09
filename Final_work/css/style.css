@@ -199,6 +199,18 @@ table {
   fill: #F0145A;
 }
 
+.social_link_grey svg * {
+  fill: #B3B3BA;
+}
+.social_link_grey:hover svg * {
+  fill: #F0145A;
+}
+@media (max-width: 496px) {
+  .social_link_grey {
+    display: none;
+  }
+}
+
 .language {
   margin-right: 14px;
 }
@@ -277,18 +289,6 @@ table {
 }
 .navigation_bottom_back_grey a:hover {
   background-size: 100% 2px;
-}
-
-.social_link_grey svg * {
-  fill: #B3B3BA;
-}
-.social_link_grey:hover svg * {
-  fill: #F0145A;
-}
-@media (max-width: 496px) {
-  .social_link_grey {
-    display: none;
-  }
 }
 
 .box_main {
@@ -393,6 +393,7 @@ table {
 }
 
 .box_main_tb4 {
+  padding-top: 80px;
   position: relative;
 }
 .box_main_tb4::after {
@@ -421,6 +422,64 @@ table {
   margin: 0 40px;
 }
 
+.slick-dots li.slick-active button:before {
+  font-size: 16px;
+  color: #24A3FF;
+  padding-top: 30px;
+}
+
+.slick-dots li button:before {
+  padding-top: 30px;
+  opacity: 0.2;
+  font-size: 16px;
+  color: #24A3FF;
+}
+
+.main_tb4 {
+  background: #F5F5FA;
+  border-radius: 12px;
+}
+
+.carousel-item {
+  display: flex;
+}
+.carousel-item img {
+  border-radius: 12px 0px 0px 12px;
+}
+
+.carousel-item_text {
+  padding: 30px;
+}
+.carousel-item_text a {
+  padding-bottom: 5px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #24A3FF;
+  text-transform: uppercase;
+}
+.carousel-item_text a::after {
+  content: "ᐳ";
+  margin-left: 6px;
+}
+.carousel-item_text h2 {
+  padding-bottom: 30px;
+  font-size: 38px;
+  font-weight: 700;
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.carousel-item_text p {
+  padding-bottom: 6px;
+  font-weight: 700;
+  color: #B3B3BA;
+}
+.carousel-item_text h3 {
+  font-weight: 400;
+  font-size: 14px;
+  color: #B3B3BA;
+}
+
 .main_tb5 {
   padding: 60px 0;
 }
@@ -428,6 +487,7 @@ table {
   text-align: center;
   padding-bottom: 30px;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 .tb5_brands {
@@ -618,7 +678,6 @@ table {
   color: #B3B3BA;
 }
 .tb6_icon img {
-  display: block;
   width: 100%;
   border-radius: 8px 8px 0px 0px;
   padding-bottom: 30px;
@@ -743,7 +802,8 @@ table {
 .humburger {
   display: none;
   cursor: pointer;
-  padding: 10px 0;
+  padding: 19px 7px;
+  border-radius: 8px;
   position: absolute;
   right: 30px;
   top: 65px;
@@ -902,10 +962,6 @@ input::placeholder {
   font-size: 21px;
 }
 
-.social_link {
-  padding-top: 30px;
-  display: flex;
-}
 .social_link p {
   color: #24A3FF;
   width: 105px;
@@ -996,11 +1052,6 @@ a {
 @media (max-width: 496px) {
   #checkbox_roggle:checked ~ .humburger {
     background: #B3B3BA;
-    border-radius: 8px;
-    padding-left: 7px;
-    padding-bottom: 19px;
-    padding-right: 7px;
-    padding-top: 19px;
   }
 }
 

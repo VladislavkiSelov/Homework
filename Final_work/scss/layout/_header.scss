@@ -136,6 +136,24 @@
     }
 }
 
+.social_link_grey {
+    svg {
+        * {
+            fill: $color_grey_text;
+        }
+    }
+    &:hover {
+        svg {
+            * {
+                fill: $color_accent;
+            }
+        }
+    }
+    @media (max-width: 496px) {
+        display: none;
+}
+}
+
 .language {
     margin-right: 14px;
 }
@@ -223,20 +241,3 @@
     }
 }
 
-.social_link_grey {
-    svg {
-        * {
-            fill: $color_grey_text;
-        }
-    }
-    &:hover {
-        svg {
-            * {
-                fill: $color_accent;
-            }
-        }
-    }
-    @media (max-width: 496px) {
-        display: none;
-}
-}

@@ -48,22 +48,73 @@ a {
     }
 }
 
+
 #checkbox_roggle {
     @media (max-width: 496px) {
         &:checked {
             ~.humburger {
                 background: $color_grey_text;
-                border-radius: 8px;
-                // padding: 19px 7px;
-                padding-left: 7px;
-                padding-bottom: 19px;
-                padding-right: 7px;
-                padding-top: 19px;
             }
         }
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// #checkbox_roggle {
+//     @media (max-width: 496px) {
+//         &:checked {
+//             ~.humburger {
+//                .humburger_line{
+//                 background:transparent;
+//                }
+//             }
+//         }
+//     }
+// }
+
+// #checkbox_roggle {
+//     @media (max-width: 496px) {
+//         &:checked {
+//             ~.humburger {
+//                .humburger_line{
+//                 &::before{
+//                     transform: rotate(-45deg);
+//                     top: 0;
+//                 }
+//                }
+//             }
+//         }
+//     }
+// }
+
+// #checkbox_roggle {
+//     @media (max-width: 496px) {
+//         &:checked {
+//             ~.humburger {
+//                .humburger_line{
+//                 &::after{
+//                     transform: rotate(45deg);
+//                     top: 0;
+//                 }
+//                }
+//             }
+//         }
+//     }
+// }
 
 
 
