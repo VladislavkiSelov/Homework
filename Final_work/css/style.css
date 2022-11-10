@@ -741,6 +741,7 @@ table {
   }
   .tabs-nav nav a {
     padding-right: 30px;
+    white-space: nowrap;
   }
 }
 .tabs-nav nav a {
@@ -1147,6 +1148,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  overflow: hidden;
 }
 
 .main {
