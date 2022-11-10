@@ -186,9 +186,10 @@
 
 .slick-initialized .slick-slide {
     display: flex;
+
     @media (max-width: 850px) {
         display: block;
-     }
+    }
 }
 
 // -------------------------------------------------------
@@ -208,7 +209,7 @@
     }
 
     @media (max-width: 850px) {
-       display: block;
+        display: block;
     }
 }
 
@@ -274,7 +275,7 @@
         justify-content: center;
         align-items: center;
     }
-    
+
     @media (max-width: 1720px) {
         margin: 0;
     }
@@ -478,4 +479,107 @@
             display: none;
         }
     }
+}
+
+
+.col {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    
+        @media (max-width: 768px) {
+            overflow: hidden;}
+}
+
+.tabs-nav { 
+    nav {
+        padding-right: 60px;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        color: $color_grey_text;
+        width: 375px;
+        border-right: 4px solid rgba(255, 255, 255, 0.3);
+        @media (max-width: 768px) {
+            flex-wrap: nowrap;
+            border-right: 0;
+            overflow: auto;
+            width: auto;
+            a{
+                padding-right: 30px;
+            }
+        }
+
+        a {
+            text-align: end;
+            font-size: $text_h2_big;
+            font-weight: $font_weight_basic;
+            position: relative;
+            padding-bottom: 30px;
+            width: 100%;
+            cursor: pointer;
+
+            &:hover {
+                color: $color_accent;
+            }
+        }
+    }
+}
+
+/* tabs triangle */
+.triangle-container {
+    position: absolute !important;
+    z-index: 10;
+    top: 0;
+    left: 99.6%;
+    width: 30px !important;
+    background: transparent !important;
+    height: 100%;
+}
+
+.content {
+    position: relative;
+    transition: opacity 0.1s linear 0s;
+    display: none;
+
+    h2 {
+        padding-top: 30px;
+        color: #FFFFFF;
+        font-size: $text_h2;
+        font-weight: $font_weight_basic;
+    }
+
+    p {
+        padding-top: 30px;
+        color: #FFFFFF;
+        font-size: $text_p_big;
+    }
+}
+
+.tabs .content.visible {
+    display: block;
+    padding-left: 60px;
+}
+
+nav a.selected {
+    background: $color_gradient_red_text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.servis {
+    padding-top: 30px;
+}
+
+.tab_box{
+    position: relative;
+    width: 100%;
+    max-width: 1090px;
+    display: flex;
+    align-items: stretch;
+
+    @media (max-width: 768px) {
+        display: block;
+    }
+
 }

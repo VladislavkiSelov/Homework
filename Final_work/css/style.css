@@ -72,6 +72,11 @@ table {
   padding: 0;
 }
 
+.container2 {
+  margin: 0px auto;
+  max-width: 1090px;
+}
+
 @font-face {
   font-family: "Montserrat";
   src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
@@ -705,6 +710,106 @@ table {
 }
 .tb6_icon a::after {
   display: none;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+}
+@media (max-width: 768px) {
+  .col {
+    overflow: hidden;
+  }
+}
+
+.tabs-nav nav {
+  padding-right: 60px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  color: #B3B3BA;
+  width: 375px;
+  border-right: 4px solid rgba(255, 255, 255, 0.3);
+}
+@media (max-width: 768px) {
+  .tabs-nav nav {
+    flex-wrap: nowrap;
+    border-right: 0;
+    overflow: auto;
+    width: auto;
+  }
+  .tabs-nav nav a {
+    padding-right: 30px;
+  }
+}
+.tabs-nav nav a {
+  text-align: end;
+  font-size: 38px;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 30px;
+  width: 100%;
+  cursor: pointer;
+}
+.tabs-nav nav a:hover {
+  color: #F0145A;
+}
+
+/* tabs triangle */
+.triangle-container {
+  position: absolute !important;
+  z-index: 10;
+  top: 0;
+  left: 99.6%;
+  width: 30px !important;
+  background: transparent !important;
+  height: 100%;
+}
+
+.content {
+  position: relative;
+  transition: opacity 0.1s linear 0s;
+  display: none;
+}
+.content h2 {
+  padding-top: 30px;
+  color: #FFFFFF;
+  font-size: 30px;
+  font-weight: 700;
+}
+.content p {
+  padding-top: 30px;
+  color: #FFFFFF;
+  font-size: 21px;
+}
+
+.tabs .content.visible {
+  display: block;
+  padding-left: 60px;
+}
+
+nav a.selected {
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.servis {
+  padding-top: 30px;
+}
+
+.tab_box {
+  position: relative;
+  width: 100%;
+  max-width: 1090px;
+  display: flex;
+  align-items: stretch;
+}
+@media (max-width: 768px) {
+  .tab_box {
+    display: block;
+  }
 }
 
 .footer {
