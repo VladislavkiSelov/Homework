@@ -1,10 +1,12 @@
-.box_main {
+.box_main_top {
     background: url(../img/Homepage/logoH.svg), $color_gradient_supersoft;
     background-repeat: no-repeat;
     background-position: 50% 0, 100%;
+    background-size: auto 100vh, 100%;
     border-radius: 0px 0px 12px 12px;
 
     h1 {
+        text-align: center;
         position: relative;
         display: flex;
         justify-content: center;
@@ -14,6 +16,37 @@
         font-weight: $font_weight_basic;
         color: $white;
 
+    }
+}
+
+.box_main_bottom {
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        height: 10px;
+        background: #CACADB;
+        border-radius: 0px 0px 12px 12px;
+        z-index: 5;
+        margin: 0 20px;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 10px;
+        height: 10px;
+        background: #E7E7F2;
+        border-radius: 0px 0px 12px 12px;
+        z-index: 5;
+        margin: 0 40px;
     }
 }
 
@@ -49,30 +82,9 @@
     }
 }
 
-// .main_tb2 {
-//     display: flex;
-//     justify-content: center;
-// }
-
-// .tb2_list {
-//     display: flex;
-//     flex-direction: column;
-//     padding-right: 60px;
-//     border-right: 4px solid $border_color ;
-
-//     a {
-//         padding-bottom: 30px;
-//     }
-// }
-
-// .tb2_text {
-//     width: 581px;
-//     padding-left: 60px;
-
-//     h2 {
-//         padding-bottom: 30px;
-//     }
-// }
+.main_tb2 {
+    padding: 90px 0 60px;
+}
 
 .servis {
     h2 {
@@ -85,11 +97,11 @@
     }
 
     a {
-        padding-top: 70px;
         padding-bottom: 10px;
         font-weight: $font_weight_basic;
         color: $color_active_regular;
         text-transform: uppercase;
+        font-size: $text_h3_caps;
 
         &:hover {
             color: $color_accent;
@@ -98,6 +110,11 @@
         &::after {
             content: '\1433';
             margin-left: 6px;
+        }
+    }
+    @media (max-width: 496px) { 
+        h2 {
+            font-size: $text_h2;
         }
     }
 }
@@ -140,34 +157,6 @@
 
 .box_main_tb4 {
     padding-top: 80px;
-    position: relative;
-
-    &::after {
-        content: '';
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        height: 10px;
-        background: #CACADB;
-        border-radius: 0px 0px 12px 12px;
-        z-index: 5;
-        margin: 0 20px;
-    }
-
-    &::before {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        top: 10px;
-        height: 10px;
-        background: #E7E7F2;
-        border-radius: 0px 0px 12px 12px;
-        z-index: 5;
-        margin: 0 40px;
-    }
 }
 
 // SLICK-------------------------------------------------
@@ -210,6 +199,11 @@
 
     @media (max-width: 850px) {
         display: block;
+
+        img {
+            width: 100%;
+            height: 500px;
+        }
     }
 }
 
@@ -249,6 +243,11 @@
         font-size: $text_h3_caps;
         color: $color_grey_text;
     }
+    @media (max-width: 496px) { 
+        h2 {
+            font-size: $text_h2;
+        }
+    }
 }
 
 
@@ -256,6 +255,7 @@
     padding: 60px 0;
 
     h3 {
+        font-size: $text_h3_caps;
         text-align: center;
         padding-bottom: 30px;
         font-weight: $font_weight_basic;
@@ -388,6 +388,7 @@
         font-weight: $font_weight_basic;
         color: $color_active_regular;
         text-transform: uppercase;
+        font-size: $text_h3_caps;
 
         &:hover {
             color: $color_accent;
@@ -407,6 +408,11 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         text-transform: uppercase;
+    }
+    @media (max-width: 496px) { 
+        h2 {
+            font-size: $text_h2;
+        }
     }
 }
 
@@ -441,6 +447,7 @@
     p {
         position: relative;
         padding: 0 30px;
+        font-size: $text_h3_caps;
 
         &::before {
             content: "";
@@ -474,6 +481,7 @@
         display: block;
         padding-left: 30px;
         text-transform: none;
+        font-size: $text_h3_caps;
 
         &::after {
             display: none;
@@ -485,43 +493,53 @@
 .col {
     display: flex;
     flex-direction: column;
-    justify-content: top;
-    
-        @media (max-width: 768px) {
-            overflow: hidden;}
+
+    @media (max-width: 768px) {
+        overflow: hidden;
+    }
 }
 
-.tabs-nav { 
+.tabs-nav {
     nav {
         padding-right: 60px;
         position: relative;
         display: flex;
         flex-wrap: wrap;
         color: $color_grey_text;
-        width: 375px;
+        width: 460px;
         border-right: 4px solid rgba(255, 255, 255, 0.3);
-        @media (max-width: 768px) {
-            flex-wrap: nowrap;
-            border-right: 0;
-            overflow: auto;
-            width: auto;
-            a{
-                padding-right: 30px;
-                white-space: nowrap;
-            }
-        }
+        justify-content: end;
 
         a {
             text-align: end;
             font-size: $text_h2_big;
             font-weight: $font_weight_basic;
             position: relative;
-            padding-bottom: 30px;
-            width: 100%;
+            padding-bottom: 60px;
             cursor: pointer;
+            white-space: nowrap;
 
             &:hover {
                 color: $color_accent;
+            }
+        }
+
+        @media (max-width: 768px) {
+            justify-content: flex-start;;
+            flex-wrap: nowrap;
+            border-right: 0;
+            overflow: auto;
+            width: auto;
+
+            a {
+                padding-right: 30px;
+                white-space: nowrap;
+            }
+        }
+
+        @media (max-width: 496px) {
+            a {
+                font-size: $text_h2;
             }
         }
     }
@@ -544,7 +562,7 @@
     display: none;
 
     h2 {
-        padding-top: 30px;
+        padding-top: 60px;
         color: #FFFFFF;
         font-size: $text_h2;
         font-weight: $font_weight_basic;
@@ -553,13 +571,24 @@
     p {
         padding-top: 30px;
         color: #FFFFFF;
-        font-size: $text_p_big;
+        font-size: 19px;
+    }
+
+    @media (max-width: 496px) {
+      
+        h2 {
+            font-size: $text_p_big;
+        }
     }
 }
 
 .tabs .content.visible {
     display: block;
     padding-left: 60px;
+    height: 400px;
+    @media (max-width: 768px) {
+        padding-left: 0;
+    }
 }
 
 nav a.selected {
@@ -568,11 +597,7 @@ nav a.selected {
     -webkit-text-fill-color: transparent;
 }
 
-.servis {
-    padding-top: 30px;
-}
-
-.tab_box{
+.tab_box {
     position: relative;
     width: 100%;
     max-width: 1090px;

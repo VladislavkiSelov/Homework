@@ -7,7 +7,7 @@
     right: 0;
     z-index: 1;
 
-    @media (max-width: 768px) {
+    @media (max-width: 830px) {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -47,6 +47,11 @@
     @media (max-width: 768px) {
         order: 2;
     }
+    @media (max-width: 496px) {
+        img{
+            width: 70px;
+        }
+    }
 }
 
 .navigation_top {
@@ -68,6 +73,9 @@
         &:hover {
             color: $color_accent;
         }
+    }
+    .tel{
+        font-size: $text_a;
     }
 
     span {
@@ -120,6 +128,9 @@
             color: $color_accent;
         }
     }
+    .active_button{
+        color: white;
+    }
 
     p {
         color: $color_grey_text;
@@ -163,6 +174,7 @@
 }
 
 .navigation_bottom {
+    order: 2;
     grid-column-start: 2;
     grid-column-end: 3;
     display: flex;

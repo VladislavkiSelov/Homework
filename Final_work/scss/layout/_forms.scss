@@ -55,17 +55,29 @@
 input {
     display: block;
     width: 100%;
-    padding: 15px 0;
     margin-bottom: 15px;
     border: 0;
     border-radius: 8px;
+    height: 56px;
+    padding: 0 15px;
+
     &::placeholder {
-        padding: 15px;
         color: $color_grey_text;
     }
 }
-.message{
-padding: 15px 0 90px 0;
+
+.message {
+    height: 130px;
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    border: 0;
+    border-radius: 8px;
+    padding: 15px 15px 0 15px;
+
+    &::placeholder {
+        color: $color_grey_text;
+    }
 }
 
 .box_form_white {
@@ -76,9 +88,10 @@ padding: 15px 0 90px 0;
     padding-top: 176px;
     padding-bottom: 60px;
     height: auto;
+
     @media (max-width: 768px) {
-       display: block;
-       padding-top: 280px;
+        display: block;
+        padding-top: 280px;
     }
 }
 
@@ -88,7 +101,8 @@ padding: 15px 0 90px 0;
 
     a {
         display: block;
-        &:hover{
+
+        &:hover {
             color: $color_accent;
         }
     }
@@ -111,19 +125,22 @@ padding: 15px 0 90px 0;
         padding-bottom: 30px;
         font-size: $text_p_big;
     }
-}
-.social_link {
-   
 
-    p {
-        color: $color_active_regular;
-        width: 105px;
-        padding-left: 10px;
-        font-size: $text_a_small;
-        font-weight: $font_weight_basic;
-        border-bottom: 0;
-        &:hover {
-            color: $color_accent;
+    .social_link {
+        padding-top: 35px;
+        display: inline-block;
+        span {
+            display: inline-block;
+            color: $color_active_regular;
+            width: 105px;
+            padding-left: 10px;
+            font-size: $text_a_small;
+            font-weight: $font_weight_basic;
+            border-bottom: 0;
+
+            &:hover {
+                color: $color_accent;
+            }
         }
     }
 }

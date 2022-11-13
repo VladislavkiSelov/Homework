@@ -10,6 +10,10 @@
 @import'./layout/forms';
 @import'./components/button_form ';
 
+*{
+    box-sizing: border-box
+  }
+
 body {
     font-family: 'Montserrat';
     font-size: $text_p;
@@ -29,7 +33,7 @@ body {
 }
 
 img {
-    max-width: 100%;
+    // max-width: 100%;
     height: auto;
     
 }
