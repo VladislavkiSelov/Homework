@@ -222,6 +222,9 @@
             content: "ᐳ";
             margin-left: 6px;
         }
+        &:hover{
+            color: $color_accent;
+        }
     }
 
     h2 {
@@ -340,7 +343,7 @@ img{
     }
 
     a {
-        display: block;
+        display: inline-block;
         padding-bottom: 10px;
         font-weight: $font_weight_basic;
         color: $color_active_regular;
@@ -503,9 +506,7 @@ padding: 30px;
     }
 }
 
-.container_form_no_margin{
-margin-bottom: 60px;
-}
+
 
 /* tabs triangle */
 .triangle-container {

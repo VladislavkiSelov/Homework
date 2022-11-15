@@ -44,7 +44,7 @@ a {
 }
 
 #checkbox_roggle {
-    @media (max-width: 496px) {
+    @media (max-width: 520px) {
         &:checked {
             ~.navigation_bottom {
                 display: block;
@@ -57,7 +57,7 @@ a {
 
 
 #checkbox_roggle {
-    @media (max-width: 496px) {
+    @media (max-width: 520px) {
         &:checked {
             ~.humburger {
                 background: $color_grey_text;
