@@ -60,6 +60,7 @@
         left: 50%;
         bottom: 50px;
         align-items: center;
+        transform: translateY(-50%);
 
         &::before {
             content: '';
@@ -67,7 +68,7 @@
             border-left: 2px solid #FFFFFF;
             height: 10px;
             width: 10px;
-            transform: rotate(-45deg) translate(7px, 14px);
+            transform: rotate(-45deg) translate(6px, 12px);
             display: inline-block;
         }
 
@@ -137,7 +138,7 @@
     }
 
     a {
-        padding: 30px 60px 0 0;
+        margin: 30px 60px 0 0;
         font-size: $text_h3;
         font-weight: $font_weight_basic;
         color: $color_active_regular;
@@ -268,12 +269,16 @@
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 120px 120px 120px;
     margin: 0 -60px;
-
+img{
+    display: inline-block;
+    vertical-align: middle;
+}
     li {
 
         display: flex;
         justify-content: center;
         align-items: center;
+        height: 120px;
     }
 
     @media (max-width: 1720px) {
@@ -313,54 +318,6 @@
             display: none;
         }
     }
-}
-
-.brand1 {
-    background: #1C4280;
-}
-
-.brand2 {
-    background: #143646;
-}
-
-.brand3 {
-    background: linear-gradient(0deg, #F48B30, #F48B30), #F48B30;
-}
-
-.brand4 {
-    background: #9E4DC3;
-}
-
-.brand5 {
-    background: #FD9339;
-}
-
-.brand6 {
-    background: #E2E2E4;
-}
-
-.brand7 {
-    background: #C71C36;
-}
-
-.brand8 {
-    background: #DCF3F9;
-}
-
-.brand9 {
-    background: #EAEAEA;
-}
-
-.brand10 {
-    background: #282240;
-}
-
-.brand11 {
-    background: #1D4568;
-}
-
-.brand12 {
-    background: #000000;
 }
 
 .box_main_tb6 {
@@ -440,13 +397,16 @@
     }
 }
 
+.tb6_icon_wraper{
+padding: 30px;
+}
+
 .tb6_icon {
     background: $white;
     border-radius: 8px 8px 0px 0px;
 
     p {
         position: relative;
-        padding: 0 30px;
         font-size: $text_h3_caps;
 
         &::before {
@@ -457,13 +417,12 @@
             position: absolute;
             top: -15px;
             z-index: 10;
-            margin: 0 30px;
         }
     }
 
     time {
         display: block;
-        padding: 15px 30px 34px 30px;
+        padding: 15px 0 34px 0;
         font-size: $text_a_small;
         text-transform: uppercase;
         font-weight: $font_weight_basic;
@@ -478,8 +437,7 @@
     }
 
     a {
-        display: block;
-        padding-left: 30px;
+        display: inline-block;
         text-transform: none;
         font-size: $text_h3_caps;
 
@@ -543,6 +501,10 @@
             }
         }
     }
+}
+
+.container_form_no_margin{
+margin-bottom: 60px;
 }
 
 /* tabs triangle */

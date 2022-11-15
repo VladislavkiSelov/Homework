@@ -61,8 +61,9 @@
     justify-content: end;
     align-items: center;
 
-    p {
+    address {
         color: $white;
+        font-style: normal;
     }
 
     a {
@@ -112,7 +113,7 @@
 
         }
 
-        p {
+        address {
             display: none;
         }
     }
@@ -132,7 +133,7 @@
         color: white;
     }
 
-    p {
+    address {
         color: $color_grey_text;
     }
 }
