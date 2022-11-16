@@ -55,6 +55,7 @@
         font-size: 36px;
         font-weight: $font_weight_second;
         margin-left: 30px;
+        transform: translateY(-15px);
 
         &::before {
             content: '';
@@ -78,6 +79,7 @@
         h2 {
             font-size: 20px;
             margin-left: 20px;
+            transform: translateY(-7px);
             &::before {
                 height: 26px;
                 width: 4px;

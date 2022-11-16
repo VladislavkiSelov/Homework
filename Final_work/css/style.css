@@ -145,6 +145,7 @@ table {
   font-size: 36px;
   font-weight: 400;
   margin-left: 30px;
+  transform: translateY(-15px);
 }
 .header_left h2::before {
   content: "";
@@ -166,6 +167,7 @@ table {
   .header_left h2 {
     font-size: 20px;
     margin-left: 20px;
+    transform: translateY(-7px);
   }
   .header_left h2::before {
     height: 26px;
@@ -413,7 +415,8 @@ table {
 }
 
 .main_tb2 {
-  padding: 90px 0 60px;
+  padding-top: 90px;
+  padding-bottom: 60px;
 }
 
 .servis h2 {
